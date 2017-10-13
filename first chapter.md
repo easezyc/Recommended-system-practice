@@ -57,21 +57,21 @@
 ### 评测指标
 1. 用户满意度（在线指标）
 2. 预测准确度（离线指标）：在计算该指标时需要有一个离线的数据集，该数据集包含用户的历史行为记录。然后，将该数据集通过时间分成训练集和测试集。最后，通过在训练集上建立用户的行为和兴趣模型预测用户在测试集上的行为，并计算预测行为和测试集上实际行为的重合度作为预测准确度。
-	1. 评分预测![评分预测](https://github.com/easezyc/Coursera-Machine-Learning-Andrew-Ng/blob/master/week%20three/pics/pic1.png?raw=true)
-	2. TopN推荐![TopN推荐](https://github.com/easezyc/Coursera-Machine-Learning-Andrew-Ng/blob/master/week%20three/pics/pic2.png?raw=true)
+	1. 评分预测![评分预测](https://github.com/easezyc/Recommended-system-practice/blob/master/pics/pic1.png?raw=true)
+	2. TopN推荐![TopN推荐](https://github.com/easezyc/Recommended-system-practice/blob/master/pics/pic2.png?raw=true)
 	3. 关于评分预测和TopN推荐的讨论
 		* 评分预测一直是推荐系统研究的热点，绝大多数推荐系统的研究都是基于用户评分数据的评分预测。
 		* 电影推荐的目的是找到用户最有可能感兴趣的电影，而不是预测用户看了电影后会给电影什么样的评分。因此，TopN推荐更符合实际的应用需求。本书主要也是讨论TopN推荐。
 3. 覆盖率
-	1. 覆盖率（coverage）描述一个推荐系统对物品长尾的发掘能力。覆盖率有不同的定义方法，最简单的定义为推荐系统能够推荐出来的物品占总物品集合的比例。假设系统的用户集合为U，推荐系统给每个用户推荐一个长度为N的物品列表R(u)。</br>![覆盖率](https://github.com/easezyc/Coursera-Machine-Learning-Andrew-Ng/blob/master/week%20three/pics/pic3.png?raw=true)
-	2. 其他定义![覆盖率其他定义](https://github.com/easezyc/Coursera-Machine-Learning-Andrew-Ng/blob/master/week%20three/pics/pic4.png?raw=true)
-	3. 基尼系数的计算原理![基尼系数的计算原理](https://github.com/easezyc/Coursera-Machine-Learning-Andrew-Ng/blob/master/week%20three/pics/pic5.png?raw=true)
+	1. 覆盖率（coverage）描述一个推荐系统对物品长尾的发掘能力。覆盖率有不同的定义方法，最简单的定义为推荐系统能够推荐出来的物品占总物品集合的比例。假设系统的用户集合为U，推荐系统给每个用户推荐一个长度为N的物品列表R(u)。</br>![覆盖率](https://github.com/easezyc/Recommended-system-practice/blob/master/pics/pic3.png?raw=true)
+	2. 其他定义![覆盖率其他定义](https://github.com/easezyc/Recommended-system-practice/blob/master/pics/pic4.png?raw=true)
+	3. 基尼系数的计算原理![基尼系数的计算原理](https://github.com/easezyc/Recommended-system-practice/blob/master/pics/pic5.png?raw=true)
 	4. 马太效应：强者更强，弱者更弱效应。
 		* 如果一个系统会增大热门物品和非热门物品的流行度差距，让热门的物品更加热门，不热门的物品更加不热门，那么这个系统就有马太效应。
 		* 推荐系统的初衷是希望消除马太效应，使得各种物品都能被展示给对它们感兴趣的某一类人群。
 		* 如果G1是从初始用户行为中计算出的物品流行度的基尼系数，G2是从推荐列表中计算出的物品流行度的基尼系数，那么如果G2 > G1，就说明推荐算法具有马太效应。
 4. 多样性（覆盖用户绝大多数的兴趣点）
-	1. ![多样性定义](https://github.com/easezyc/Coursera-Machine-Learning-Andrew-Ng/blob/master/week%20three/pics/pic6.png?raw=true)
+	1. ![多样性定义](https://github.com/easezyc/Recommended-system-practice/blob/master/pics/pic6.png?raw=true)
 	2. 从上面的定义可以看到，不同的物品相似度度量函数s(i, j)可以定义不同的多样性。如果用内容相似度描述物品间的相似度，我们就可以得到内容多样性函数，如果用协同过滤的相似度函数描述物品间的相似度，就可以得到协同过滤的多样性函数。
 5. 新颖性（新颖的推荐是指给用户推荐那些他们以前没有听说过的物品）
 6. 惊喜度
@@ -97,5 +97,3 @@
 	* 物品维度：包括物品的属性信息、流行度、平均分以及是不是新加入的物品等。
 	* 时间维度：包括季节，是工作日还是周末，是白天还是晚上等。
 * 如果能够在推荐系统评测报告中包含不同维度下的系统评测指标，就能帮我们全面地了解推荐系统性能，找到一个看上去比较弱的算法的优势，发现一个看上去比较强的算法的缺点。
-
-	
