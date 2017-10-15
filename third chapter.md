@@ -21,7 +21,7 @@
 	2. 根据用户的注册信息对用户分类；
 	3. 给用户推荐他所属分类中用户喜欢的物品。
 3. 计算每种特征的用户喜欢的物品。
-	基于用户注册信息的推荐算法其核心问题是计算每种特征的用户喜欢的物品。也就是说，对于每种特征f，计算具有这种特征的用户对各个物品的喜好程度p(f, i)。
+	基于用户注册信息的推荐算法其核心问题是计算每种特征的用户喜欢的物品。也就是说，对于每种特征f，计算具有这种特征的用户对各个物品的喜好程度p(f, i)。</br>
     ![喜好程度](https://github.com/easezyc/Recommended-system-practice/blob/master/pics/pic25.png?raw=true)
 ## 选择合适的物品启动用户的兴趣
 解决用户冷启动问题的另一个方法是在新用户第一次访问推荐系统时，不立即给用户展示推荐结果，而是给用户提供一些物品，让用户反馈他们对这些物品的兴趣，然后根据用户反馈给提供个性化推荐。
@@ -30,11 +30,11 @@
 2. 具有代表性和区分性
 3. 启动物品集合需要有多样性
 
-如何选择启动物品集合呢。可以用决策树解决这个问题。
-![选择启动物品](https://github.com/easezyc/Recommended-system-practice/blob/master/pics/pic26.png?raw=true)
+如何选择启动物品集合呢。可以用决策树解决这个问题。</br>
+![选择启动物品](https://github.com/easezyc/Recommended-system-practice/blob/master/pics/pic26.png?raw=true)</br>
 ![选择启动物品](https://github.com/easezyc/Recommended-system-practice/blob/master/pics/pic27.png?raw=true)
 ## 利用物品的内容信息
-1. 物品的内容可以通过向量空间模型表示，该模型会将物品表示成一个关键词向量。如果物品的内容是一些诸如导演、演员等实体的话，可以直接将这些实体作为关键词。但如果内容是文本的形式，则需要引入一些理解自然语言的技术抽取关键词。
+1. 物品的内容可以通过向量空间模型表示，该模型会将物品表示成一个关键词向量。如果物品的内容是一些诸如导演、演员等实体的话，可以直接将这些实体作为关键词。但如果内容是文本的形式，则需要引入一些理解自然语言的技术抽取关键词。</br>
 ![关键词向量的生成过程](https://github.com/easezyc/Recommended-system-practice/blob/master/pics/pic28.png?raw=true)
 得到物品相似度之后，可以用ItemCF算法的思想，给用户推荐和他历史上喜欢的物品内容相似的物品。
 2. LDA话题模型
