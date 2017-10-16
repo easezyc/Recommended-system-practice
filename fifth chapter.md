@@ -38,18 +38,19 @@
 	1. 最近最热门</br>
 	
 	![最近最热门](https://github.com/easezyc/Recommended-system-practice/blob/master/pics/pic34.png?raw=true)
-    2. 时间上下文相关的ItemCF算法
+    2. 时间上下文相关的ItemCF算法</br>
     	ItemCF的核心
 
-			*  利用用户行为离线计算物品之间的相似度
-			*  根据用户的历史行为和物品相似度矩阵，给用户做在线个性化推荐。
+		*  利用用户行为离线计算物品之间的相似度
+		*  根据用户的历史行为和物品相似度矩阵，给用户做在线个性化推荐。</br>
+		
 		时间信息的重要应用
 
-			*  物品相似度：用户在相隔很短的时间内喜欢的物品具有更高相似度。
-			*  在线推荐：用户近期行为相比用户很久之前的行为，更能体现用户现在的兴趣。</br>
-		![时间上下文相关的ItemCF算法](https://github.com/easezyc/Recommended-system-practice/blob/master/pics/pic35.png?raw=true)
-        ![考虑时间信息对预测公式的影响](https://github.com/easezyc/Recommended-system-practice/blob/master/pics/pic36.png?raw=true)
-        ![考虑时间信息对预测公式的影响](https://github.com/easezyc/Recommended-system-practice/blob/master/pics/pic37.png?raw=true)
+		*  物品相似度：用户在相隔很短的时间内喜欢的物品具有更高相似度。
+		*  在线推荐：用户近期行为相比用户很久之前的行为，更能体现用户现在的兴趣。</br>
+		![时间上下文相关的ItemCF算法](https://github.com/easezyc/Recommended-system-practice/blob/master/pics/pic35.png?raw=true)</br>
+        ![考虑时间信息对预测公式的影响](https://github.com/easezyc/Recommended-system-practice/blob/master/pics/pic36.png?raw=true)</br>
+        ![考虑时间信息对预测公式的影响](https://github.com/easezyc/Recommended-system-practice/blob/master/pics/pic37.png?raw=true)</br>
 	3. 时间上下文相关的UserCF算法
 		可以在以下两个方面利用时间信息改进UserCF算法：
         	* 用户兴趣相似度 
